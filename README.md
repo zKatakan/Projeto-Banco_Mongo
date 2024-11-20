@@ -12,3 +12,8 @@
 * Primeiramente é necessario gerar as coleções onde serão armazenados os dados, para isso, basta abrir o [codigo de criação de dados](bancoMongo/gerdadosmong.py) ou o [preset de dados](bancoMongo/dadosInsert.txt) e inserir os dados que o proprio MongoDB ja ira criar as colecoes aqui e inserir o conteudo em cada colecao devidamente.
 * As queries que atendem os objetivos propostos podem ser vistas clicando [aqui](bancoMongo/queriesmongo.txt).
 * O diagrama das colecoes pode ser visto clicando [aqui](bancoMongo/mongodb.png)
+
+4. Integrantes
+* Diego Meira Jardim  R.A: 24.122.094-6
+* Lucas Antunes Sampaio  R.A: 24.122.056-5
+* Romulo Carneiro de Oliveira Canavesso  R.A: 24.122.093-8
