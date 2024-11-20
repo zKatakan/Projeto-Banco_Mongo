@@ -1,0 +1,48 @@
+QUERIES:
+
+1.
+db["aluno"].find()
+
+2.
+db["historico_professor"].find()
+
+3.
+db["graduado"].find()
+
+4.
+db.professor.aggregate([
+  {
+    $lookup: {
+      from: "departamento",
+      localField: "prof_id",
+      foreignField: "chefe_id",
+      as: "department_info"
+    }
+  }
+])
+
+5.
+db.aluno.aggregate([
+  {
+    "$lookup": {
+      "from": "grupo_tcc",
+      "localField": "aluno_id",
+      "foreignField": "aluno_id",
+      "as": "grupo_info"
+    }
+  },
+  {
+    "$unwind": "$grupo_info"
+  },
+  {
+    "$lookup": {
+      "from": "tcc",
+      "localField": "grupo_info.tcc_id",
+      "foreignField": "tcc_id",
+      "as": "tcc_info"
+    }
+  },
+  {
+    "$unwind": "$tcc_info"
+  }
+])
