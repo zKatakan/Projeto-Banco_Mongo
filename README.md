@@ -9,6 +9,6 @@
 *  Por conta de ser um banco não relacional, o MongoDB não suporta nenhum tipo de JOINS como em bancos relacionais, porém, existe uma função do proprío Banco chamada "lookup", que permite a realização de buscas em outras bibliotecas de dados, realizar um match de algum atributo em comum e então armazana-la na biblioteca especificada, então utilizamos desta função para facilitar a implementação e agregação dos dados.
 
 3. Como utilizar o código
-* Primeiramente é necessario gerar as coleções onde serão armazenados os dados, para isso, basta abrir o documento de criação de coleções clicando aqui e inserir o conteudo no Mongosh
+* Primeiramente é necessario gerar as coleções onde serão armazenados os dados, para isso, basta abrir o documento de criação de dados e inserir os dados que o proprio MongoDB ja ira criar as colecoes aqui e inserir o conteudo no Mongosh
 * Após a criação das coleções, você pode utilizar o código de geração de dados para gerar dados novos para inserir clicando aqui ou utilizar o preset de dados clicando aqui, então basta copiar e colar os dados no Mongosh para inserir os dados.
 * As queries que atendem os objetivos propostos podem ser vistas clicando aqui.  
